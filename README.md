@@ -1,0 +1,1 @@
+# sprig-boot-jpa-avoid-deserialization-exception

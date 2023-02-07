@@ -1,5 +1,6 @@
 package com.techgen.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import jakarta.persistence.Column;
@@ -35,6 +36,7 @@ public class Customer {
 	private String type;
 
 	// @JsonIgnore
+	// @JsonBackReference
 	@ManyToOne
 	@JoinColumn(name = "product_id")
 	private Product product;

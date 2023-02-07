@@ -6,6 +6,7 @@ import java.util.Set;
 import org.hibernate.annotations.CreationTimestamp;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.techgen.model.ProductStatus;
 
 import jakarta.persistence.CascadeType;
@@ -60,6 +61,7 @@ public class Product {
 	private ProductStatus productStatus;
 
 	// @JsonIgnore
+	//@JsonManagedReference
 	@OneToMany(mappedBy = "product", cascade = CascadeType.PERSIST)
 	private Set<Customer> customers;
 

@@ -1,0 +1,51 @@
+{
+	"info": {
+		"_postman_id": "abe7044d-4721-4383-b1fb-103f6036423c",
+		"name": "Product Deserialization Exception Avoiding",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5863778"
+	},
+	"item": [
+		{
+			"name": "Get Product by Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8083/product/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"product",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Customer by Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8083/product/customer/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"product",
+						"customer",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
